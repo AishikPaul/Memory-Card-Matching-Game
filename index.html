@@ -15,8 +15,8 @@
     }
     .grid {
       display: grid;
-      grid-template-columns: repeat(6, 100px);
-      grid-template-rows: repeat(6, 100px);
+      grid-template-columns: repeat(4, 100px); /* Updated to 4 columns */
+      grid-template-rows: repeat(4, 100px); /* Updated to 4 rows */
       gap: 10px;
       justify-content: center;
     }
@@ -62,8 +62,8 @@
     const messageElement = document.getElementById('message');
     const congratsMessageElement = document.getElementById('congratsMessage');
 
-    // Increase the number of pairs
-    const symbols = ['🍎', '🍌', '🍇', '🍒', '🍊', '🍉', '🍓', '🍍', '🍑', '🍓', '🍍', '🍊', '🍇', '🍎', '🍒', '🍑', '🍌', '🍉', '🍉', '🍎', '🍓', '🍌', '🍇', '🍍', '🍊', '🍋', '🍒', '🍑', '🍓', '🍋', '🍉', '🍇', '🍊', '🍍', '🍒', '🍎'];
+    // Update the symbols array to match 16 cards (8 pairs)
+    const symbols = ['🍎', '🍌', '🍇', '🍒', '🍊', '🍉', '🍓', '🍍', '🍑', '🍎', '🍌', '🍇', '🍒', '🍊', '🍉', '🍓'];
     let shuffledSymbols = [];
     let flippedCards = [];
     let matchedPairs = 0;
